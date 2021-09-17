@@ -183,7 +183,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   padding: 20px;
   border-radius: 2px;
   border-top:solid 1px rgba(100,100,100,0.1);
-  background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.2);
   backdrop-filter: blur(2px);
   box-shadow:
   0px 0px 0px rgb(250 250 250 / 30%),
@@ -316,19 +316,19 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 /*___________________________________________________________Classes de thèmes
 ==============================================================================*/
 .charahead{
-  background-image: url(https://i.imgur.com/ytiy926.jpg);
+  background-image: url(https://i.imgur.com/ubvr7vE.png);
 }
 .skillhead{
-  background-image: url(https://i.imgur.com/ngAoc0U.jpg);
+  background-image: url(https://i.imgur.com/55sclmk.png);
 }
 .statehead{
-  background-image: url(https://i.imgur.com/2jlICzu.jpg);
+  background-image: url(https://i.imgur.com/xCAj2nu.png);
 }
 .gearhead{
-  background-image: url(https://i.imgur.com/fb83bUt.jpg);
+  background-image: url(https://i.imgur.com/A1Ql8Nl.png);
 }
 .rulehead{
-  background-image: url(https://i.imgur.com/sKzRaEs.jpg);
+  background-image: url(https://i.imgur.com/Ruod9C0.png);
 }
 /*________________________________________________Transitions & hover behavior
 ==============================================================================*/
