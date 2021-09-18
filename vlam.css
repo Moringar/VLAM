@@ -38,12 +38,11 @@ p{
 /*Formate la zone de texte à l'intérieur des cartes.
 =============================================*/
 .cardtxt{
-  background-color:rgba(28, 28, 28, 0.1);
-  backdrop-filter: blur(3px);
-  border-radius: 8px;
-  border: 1px dotted rgba(28, 28, 28, 0.3);
+  border-radius: 2px;
+  border: 1px dotted rgba(28, 28, 28, 1);
   font-size: 12pt;
   text-align: left;
+  text-indent: 0px;
 }
 .aside{
   text-indent: 5px;
@@ -119,6 +118,7 @@ html{
   background-color: rgba(100, 100, 100, 0);
   margin-top: 5px;.7
   margin-bottom: 10px ;
+  margin-bottom: 2px;
 }
 }
 .devspace{
