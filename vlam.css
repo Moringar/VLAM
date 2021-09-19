@@ -192,7 +192,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     padding: 10px;
     border-radius: 6px;
     border-top:solid 1px rgba(250,250,250,0.1);
-    background-image: url(https://i.imgur.com/oned5R3.png);
+    background-image: url(https://i.imgur.com/WwoeoZm.png);
     box-shadow:
     0px 0px 0px rgb(250 250 250 / 30%),
     0px 2px 1px rgb(0 0 0 / 30%);
@@ -227,6 +227,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 @media screen and (max-width: 768px) {
 
   .skill{
+    padding-left: 3px;
+    padding-right: 3px;
     font-family: 'Lato', sans-serif;
     font-size: 17px;
     border-radius: 2px;
@@ -236,16 +238,20 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .state{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     border-radius: 2px;
-    background-color: rgba(0,132,229,0.9);
+    background-color: #1D00CA;
     color: white;
     text-shadow: -1px 0 black, 0 1px black,
       1px 0 black, 0 -1px black;
   }
   .trouble{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     border-radius: 2px;
     background-color: rgba(0,132,229,0.9);
@@ -255,7 +261,9 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   }
 
   .gear{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     border-radius: 2px;
     background-color: #A700FE;
@@ -264,7 +272,9 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .rule{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     border-radius: 2px;
     background-color: rgba(209, 17, 73,0.9);
@@ -273,7 +283,9 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .chara{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     border-radius: 2px;
     background-color: #ADF500;
@@ -289,6 +301,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 @media screen and (min-width: 768px) {
 
   .skill{
+    padding-left: 3px;
+    padding-right: 3px;
     font-family: 'Lato', sans-serif;
     font-size: 17px;
     text-shadow:
@@ -299,11 +313,13 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     box-shadow:
     1px 1px 2px #FFBA00;
     -1px -1px 2px #FFBA00;
-    background-color: #FFBA00;
+    background-color: #D9AE3B;
     color: white;
   }
   .state{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     text-shadow:
     0px 0px 2px #000000,
@@ -311,12 +327,14 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     0px 0px 4px #000000;
     border-radius: 2px;
     box-shadow:
-    1px 1px 2px rgba(0,132,229,0.9),
-    -1px -1px 2px rgba(0,132,229,0.9);
-    background-color: rgba(0,132,229,0.9);
+    1px 1px 2px #004EFF,
+    -1px -1px 2px #004EFF;
+    background-color: #4A6AB2;
     color: white;
   }
   .trouble{
+    padding-left: 3px;
+    padding-right: 3px;
    font-family: 'Lato', sans-serif;
     font-size: 17px;
     text-shadow:
@@ -325,14 +343,16 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     0px 0px 4px #FF0000;
     border-radius: 2px;
     box-shadow:
-    1px 1px 2px rgba(0,132,229,0.9),
-    -1px -1px 2px rgba(0,132,229,0.9);
-    background-color: rgba(0,132,229,0.9);
+    1px 1px 2px  #004EFF,
+    -1px -1px 2px  #004EFF;
+    background-color:  #4A6AB2;
     color: white;
   }
 
   .gear{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     text-shadow:
     0px 0px 2px #000000,
@@ -342,11 +362,13 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     box-shadow:
     1px 1px 2px #A700FE,
     -1px -1px 2px #A700FE;
-    background-color: #A700FE;
+    background-color: #9A40C9;
     color: white;
   }
   .rule{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     text-shadow:
     0px 0px 2px #000000,
@@ -360,7 +382,9 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .chara{
-   font-family: 'Lato', sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     text-shadow:
     0px 0px 2px #000000,
@@ -368,9 +392,9 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     0px 0px 4px #000000;
     border-radius: 2px;
     box-shadow:
-    1px 1px 2px #ADF500,
-    -1px -1px 2px #ADF500;
-    background-color: #ADF500;
+    1px 1px 2px #B3FF00,
+    -1px -1px 2px #B3FF00;
+    background-color: #96C32C;
     color: white;
   }
 
