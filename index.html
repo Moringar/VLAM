@@ -44,6 +44,8 @@
 					Ici, pas de système de levelling ni d'xp distribuée en fin de partie: Chaque décision à une conséquence immediate sur <mark class="state">l'état</mark> des personnages et de leur environnement.<br><br>
 					<i>"C'est qui le plus fort entre un Samuraï hémophile qui chevauche un Requin-Laser et un Mecha T-Rex piloté par le fantôme de Richard Nixon?"</i> est une question a laquelle on peut répondre en utilisant les outils de VLAM.
 				</p>
+				<div class="lightbar"></div>
+				<p><mark class="rule" data-tooltip=" Les tooltips sont activés sur les étiquettes colorées">TOOLTIPS : ACTIVATED</mark></p>
 			</div>
 
 
@@ -277,11 +279,11 @@
 						</div>
 						<div class="column is-9"><!--la description-->
 
-							<p class="cardtxt"><mark class="chara" data-tooltip="Un surnom qui inclut son métier.">Nurse Bwillis</mark></p>
+							<p class="cardtxt"><mark class="chara" data-tooltip="Un surnom qui inclut son métier et son nom.">Nurse Bwillis</mark></p>
 							<div class="barspace"></div>
 							<p class="cardtxt"><mark class="state" data-tooltip="Un métier dans une situation particulière."> infirmière veterane du Viet Nam</mark></p>
 							<div class="genspace2"></div>
-							<p class="cardtxt"><mark class="trouble" data-tooltip="Un surnom qui inclut son métier.">Des Flashback à gauche, à droite...</mark></p>
+							<p class="cardtxt"><mark class="trouble" data-tooltip="Des conséquences qui l'affectent au quotidien.">Des Flashback à gauche, à droite...</mark></p>
 
 						</div>
 					</div>
@@ -295,11 +297,11 @@
 						</div>
 
 						<div class="column is-9"><!--la description-->
-							<p class="cardtxt"><mark class="chara">Nikolaï Nikolaïson</mark></p>
+							<p class="cardtxt"><mark class="chara" data-tooltip="Son nom et son surnom légendaire." >Nikolaï Nikolaïson <i>ou le</i> BABAKAYAK</mark></p>
 							<div class="barspace"></div>
-							<p class="cardtxt"><mark class="state">Agent du KGB infiltré aux U.S</mark></p>
+							<p class="cardtxt"><mark class="state" data-tooltip="Sa fonction officieuse et son lieu de déploiement.">Agent du KGB infiltré aux U.S</mark></p>
 							<div class="genspace2"></div>
-							<p class="cardtxt"><mark class="trouble">"Il est drôle ton accent !"</mark></p>
+							<p class="cardtxt"><mark class="trouble " data-tooltip="Un défaut majeur lorqu'on est un espion.">"Il est drôle ton accent !"</mark></p>
 						</div>
 					</div>
 				</div><!--________________fin Carte-->
@@ -312,11 +314,11 @@
 						</div>
 
 						<div class="column is-9"><!--la description-->
-							<p class="cardtxt"><mark class="chara">Grundalf le bleu</mark></p>
+							<p class="cardtxt"><mark class="chara" data-tooltip="Son nom, sa fonction et sa couleur.">Grundalf le mage bleu</mark></p>
 							<div class="barspace"></div>
-							<p class="cardtxt"><mark class="state">Le magicien de quartier amateur.</mark></p>
+							<p class="cardtxt"><mark class="state" data-tooltip="Populaire, serviable et encore en apprentissage">Le magicien de quartier amateur.</mark></p>
 							<div class="genspace2"></div>
-							<p class="cardtxt"><mark class="trouble"> Fait disparaitre les gens.</mark></p>
+							<p class="cardtxt"><mark class="trouble" data-tooltip="Une mauvaise manie ou de l'incompétence, peut-être."> Fait disparaitre des gens.</mark></p>
 						</div>
 					</div>
 				</div><!--________________fin Carte-->
@@ -343,7 +345,11 @@
 				<div class="barspace"></div>
 				<h2 class="aside">Au commencement, toute créature était objectivement médiocre et absolument inutile.  </h2>
 				<div class="lightbar"></div>
-				<p class="aside">On va y remédier, c'est notre projet.</p>
+				<div class="genspace2"></div>
+				<p>La valeur d'une compétences d'un personnage s'ajoute au résultat du jet de dès lors d'un &nbsp<mark class="rule" data-tooltip="2D6 + Compétence + Etat + Equipement">tests de compétences.</mark><br>
+					cependant, toutes les compétences d'un personnage sont à <i class="lightrule">0</i> lors de sa création, on va donc y distribuer ou y soustraire des points selon les habiletés du personnage voulu.
+				</p>
+
 			</div>
 			<div class="genspace2"></div>
 
@@ -517,10 +523,10 @@
 
 			<div class="column is-8">
 				<div class="board">
-					<h2>Dans quel <mark class="state">état</mark> êtes-vous aujourd'hui?</h2>
+					<h2>Dans quel <mark class="state" data-tooltip="synonyme de 'situation' ou 'condition'." >état</mark> êtes-vous aujourd'hui?</h2>
 					<div class="barspace"></div>
 					<p>
-						Les <i class="lightstate">états</i> fournissent des modificateurs que l'ont peut appliquer aux actions des personnages lors des &nbsp<mark class="rule">tests de compétences.</mark>.<br>
+						Les <i class="lightstate">états</i> fournissent des modificateurs que l'ont peut appliquer aux actions des personnages lors des &nbsp<mark class="rule" data-tooltip="2D6 + Compétence + Etat + Equipement">tests de compétences.</mark>.<br>
 					</p>
 				</div>
 			</div>

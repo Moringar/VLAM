@@ -28,7 +28,6 @@ p{
   text-indent: 3px;
   font-family: 'Lato', sans-serif;
   color: #c2c2c2;
-  font-family: Lato, Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 15px;
   line-height: 1.5;
@@ -577,7 +576,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   background-position: 0px 0px;
   animation: slide 2s infinite linear ;
 }
-/*=========================================================================================*/
+/*==============================================================================Tooltipythingy===========*/
 [data-tooltip] {
   position: relative;
   z-index: 2;
@@ -600,16 +599,17 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   margin-bottom: 5px;
   margin-left: -80px;
   padding: 7px;
-  width: 160px;
+  width: 200px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   background-color: #000;
-  background-color: hsla(0, 0%, 20%, 0.5);
-  color: #fff;
+  background-color: hsla(0, 0%, 0%, 0.9);
+  color: #c2c2c2;
   content: attr(data-tooltip);
   text-align: center;
   font-size: 15px;
+  font-weight: 400;
   line-height: 1.2;
 }
 
