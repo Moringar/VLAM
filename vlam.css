@@ -76,8 +76,12 @@ h2{
   font-size: 14pt;
 }
  p{
-  font-size: 13px;
+  font-size: 14px;
  }
+ th p{
+  font-size: 13px;
+  text-align: center;
+}
 /*retrait d'elements ciblés pour format mobile
 =============================================*/
  .wide{
@@ -180,24 +184,15 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   text-align: center;
 }
 
-.table{
-    border-radius: 4px;
-    padding: 20px;
-    border-radius: 15px;
-    background: linear-gradient(
-    360deg, rgba(50, 50, 50, 0.1) 0%, rgba(100, 100, 100, 0.1) 100%);
-    backdrop-filter: blur(4px);
-
 }
 
 /*Format Mobile*/
 @media screen and (max-width: 768px) {
-
   .card{
       padding: 10px;
-      border-radius: 6px;
       border-top:solid 1px rgba(250,250,250,0.1);
       background-image: url(https://i.imgur.com/oned5R3.png);
+      border-radius: 6px;
   }
 
   .board{
@@ -211,30 +206,22 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
      margin-left: auto;
      margin-right:auto;
   }
-    .table{
-    width: 100%;
-    border-radius: 4px;
-    padding: 20px;
-    border-radius: 15px;
-    background: linear-gradient(
-    360deg, rgba(50, 50, 50, 0.1) 0%, rgba(100, 100, 100, 0.1) 100%);
-    backdrop-filter: blur(4px);
-
-  } 
 
 }
+
 /*Format Wide*/
 @media screen and (min-width: 768px) {
 
   .card{
     padding: 10px;
-    border-radius: 6px;
     border-top:solid 1px rgba(250,250,250,0.1);
     background-image: url(https://i.imgur.com/WwoeoZm.png);
     box-shadow:
     0px 0px 0px rgb(250 250 250 / 30%),
     0px 2px 1px rgb(0 0 0 / 30%);
+    border-radius: 6px;
   }
+
   /*Carte semi opaque. Informations génerales.
   =============================================*/
   .board{
@@ -245,13 +232,14 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     backdrop-filter: blur(4px);
   }
 
-  .table{
-    border-radius: 4px;
+.table{
     padding: 20px;
-    border-radius: 15px;
+    border-radius:8px;
     background: linear-gradient(
     360deg, rgba(50, 50, 50, 0.1) 0%, rgba(100, 100, 100, 0.1) 100%);
     backdrop-filter: blur(4px);
+    box-shadow: 0px 12px 12px #090909;
+
 
   } 
 
@@ -517,65 +505,77 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 }
 
 
-@keyframes slide {
-  from {
-    background-position: 0 0;
+
+/*Wide*/
+@media screen and (min-width: 768px) {
+  @keyframes slide {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 74px 0; /*Slide vers la droite */
+    }
   }
-  to {
-    background-position: 74px 0; /*Slide vers la droite */
+  @keyframes sliderev {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -74px 0; /*Slide vers la droite */
+    }
   }
+
+  #N1 { /* modificateur Valeur -3*/
+    background-image: url(https://i.imgur.com/KqGQvnR.png);
+    background-position: 0px 0px;
+    animation: sliderev 2s linear infinite;
+  }
+
+  #N2{  /* modificateur Valeur -2*/
+    background-image: url(https://i.imgur.com/7WwmbQF.png);
+    background-position: 0px 0px;
+    animation: sliderev 4s linear infinite;
+  }
+  #N3 {  /* modificateur Valeur -1*/
+    background-image: url(https://i.imgur.com/NbMGaWh.png);
+    background-position: 0px 0px;
+    animation: sliderev 10s linear infinite;
+  }
+  #N4 {  /* modificateur Valeur 0*/
+    background-image: url(https://i.imgur.com/Y787U6p.png);
+    animation-name: slide;
+    background-position: 0px 0px;
+    animation: slide 30s linear infinite;
+  }
+  #N5 {  /* modificateur Valeur 1*/
+    background-image: url(https://i.imgur.com/GgtBhUI.png);
+    animation-name: slide;
+    background-position: 0px 0px;
+    animation: slide 10s linear infinite;
+  }
+  #N6 {  /* modificateur Valeur 2*/
+    background-image: url(https://i.imgur.com/whp4K4f.png);
+    animation-name: slide;
+    background-position: 0px 0px;
+    animation: slide 4s linear infinite;
+  }
+  #N7 {  /* modificateur Valeur 3*/
+    background-image: url(https://i.imgur.com/o5ppCBo.png);
+    animation-name: slide;
+    background-position: 0px 0px;
+    animation: slide 2s infinite linear ;
+  }
+
+
 }
-@keyframes sliderev {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -74px 0; /*Slide vers la droite */
-  }
-}
+
+/*mobile*/
+@media screen and (max-width: 768px) {
 
 
 
-#N1 { /* modificateur Valeur -3*/
-  background-image: url(https://i.imgur.com/KqGQvnR.png);
-  background-position: 0px 0px;
-  animation: sliderev 2s linear infinite;
 }
 
-#N2{  /* modificateur Valeur -2*/
-  background-image: url(https://i.imgur.com/7WwmbQF.png);
-  background-position: 0px 0px;
-  animation: sliderev 4s linear infinite;
-}
-#N3 {  /* modificateur Valeur -1*/
-  background-image: url(https://i.imgur.com/NbMGaWh.png);
-  background-position: 0px 0px;
-  animation: sliderev 10s linear infinite;
-}
-#N4 {  /* modificateur Valeur 0*/
-  background-image: url(https://i.imgur.com/Y787U6p.png);
-  animation-name: slide;
-  background-position: 0px 0px;
-  animation: slide 30s linear infinite;
-}
-#N5 {  /* modificateur Valeur 1*/
-  background-image: url(https://i.imgur.com/GgtBhUI.png);
-  animation-name: slide;
-  background-position: 0px 0px;
-  animation: slide 10s linear infinite;
-}
-#N6 {  /* modificateur Valeur 2*/
-  background-image: url(https://i.imgur.com/whp4K4f.png);
-  animation-name: slide;
-  background-position: 0px 0px;
-  animation: slide 4s linear infinite;
-}
-#N7 {  /* modificateur Valeur 3*/
-  background-image: url(https://i.imgur.com/o5ppCBo.png);
-  animation-name: slide;
-  background-position: 0px 0px;
-  animation: slide 2s infinite linear ;
-}
 /*==============================================================================Tooltipythingy===========*/
 [data-tooltip] {
   position: relative;
@@ -603,8 +603,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  background-color: #000;
-  background-color: hsla(0, 0%, 0%, 0.9);
+  background-color: #2C2C2C;
   color: #c2c2c2;
   content: attr(data-tooltip);
   text-align: center;
