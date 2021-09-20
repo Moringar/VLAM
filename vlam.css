@@ -600,14 +600,14 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   margin-left: -80px;
   padding: 7px;
   width: 200px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   background-color: #2C2C2C;
   color: #c2c2c2;
   content: attr(data-tooltip);
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.2;
 }
