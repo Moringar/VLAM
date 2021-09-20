@@ -34,6 +34,21 @@ p{
   line-height: 1.5;
   text-align: justify;
 }
+
+th p{
+  border-radius: 5px;
+  font-size: 15px;
+  text-shadow:
+  -1px -1px 1px #000000,
+  1px 1px 1px #000000,
+  0px 0px 2px #000000,
+  0px 0px 3px #000000,
+  0px 0px 4px #000000,
+  0px 0px 5px #000000,
+  0px 0px 6px #000000,
+  0px 0px 5px #000000;
+  text-align: center;
+}
 /*Formate la zone de texte à l'intérieur des cartes.
 =============================================*/
 .cardtxt{
@@ -160,12 +175,21 @@ html{
 }
 
 a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
-    font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches', cursive;
   position: relative;
   bottom: 12px;
   text-align: center;
 }
 
+.table{
+    border-radius: 4px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(
+    360deg, rgba(50, 50, 50, 0.1) 0%, rgba(100, 100, 100, 0.1) 100%);
+    backdrop-filter: blur(4px);
+
+}
 
 /*Format Mobile*/
 @media screen and (max-width: 768px) {
@@ -180,7 +204,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   .board{
     padding: 20px;
     border-radius: 15px;
-   background-color: #1F1F1F;
+     background-color: #1F1F1F;
   }
 
   #charapresent1{
@@ -188,6 +212,16 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
      margin-left: auto;
      margin-right:auto;
   }
+    .table{
+    width: 100%;
+    border-radius: 4px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(
+    360deg, rgba(50, 50, 50, 0.1) 0%, rgba(100, 100, 100, 0.1) 100%);
+    backdrop-filter: blur(4px);
+
+  } 
 
 }
 /*Format Wide*/
@@ -212,11 +246,20 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     backdrop-filter: blur(4px);
   }
 
+  .table{
+    border-radius: 4px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(
+    360deg, rgba(50, 50, 50, 0.1) 0%, rgba(100, 100, 100, 0.1) 100%);
+    backdrop-filter: blur(4px);
+
+  } 
+
+
     #charapresent1{
        position: absolute;
        transform: translate(-49%, -10%);
-       height: 63%;
-
   }
 
 }
@@ -347,7 +390,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   .trouble{
     padding-left: 3px;
     padding-right: 3px;
-   font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 17px;
     text-shadow:
     0px 0px 2px #FF0000,
@@ -458,7 +501,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 .rulehead{
   background-image: url(https://i.imgur.com/Ruod9C0.png);
 }
-/*________________________________________________Transitions & hover behavior
+/*_____________________________________Animations, Transitions & hover behavior
 ==============================================================================*/
 .skill:hover,
 .state:hover,
@@ -472,4 +515,108 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 #pillbox_r:hover h2{
   text-shadow: 0px 0px 1px white, 0px 0px 20px rgba(250,250,250, 0.6);
   transition:.2s;
+}
+
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 74px 0; /*Slide vers la droite */
+  }
+}
+@keyframes sliderev {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -74px 0; /*Slide vers la droite */
+  }
+}
+
+
+
+#N1 { /* modificateur Valeur -3*/
+  background-image: url(https://i.imgur.com/KqGQvnR.png);
+  background-position: 0px 0px;
+  animation: sliderev 2s linear infinite;
+}
+
+#N2{  /* modificateur Valeur -2*/
+  background-image: url(https://i.imgur.com/7WwmbQF.png);
+  background-position: 0px 0px;
+  animation: sliderev 4s linear infinite;
+}
+#N3 {  /* modificateur Valeur -1*/
+  background-image: url(https://i.imgur.com/NbMGaWh.png);
+  background-position: 0px 0px;
+  animation: sliderev 10s linear infinite;
+}
+#N4 {  /* modificateur Valeur 0*/
+  background-image: url(https://i.imgur.com/Y787U6p.png);
+  animation-name: slide;
+  background-position: 0px 0px;
+  animation: slide 30s linear infinite;
+}
+#N5 {  /* modificateur Valeur 1*/
+  background-image: url(https://i.imgur.com/GgtBhUI.png);
+  animation-name: slide;
+  background-position: 0px 0px;
+  animation: slide 10s linear infinite;
+}
+#N6 {  /* modificateur Valeur 2*/
+  background-image: url(https://i.imgur.com/whp4K4f.png);
+  animation-name: slide;
+  background-position: 0px 0px;
+  animation: slide 4s linear infinite;
+}
+#N7 {  /* modificateur Valeur 3*/
+  background-image: url(https://i.imgur.com/o5ppCBo.png);
+  animation-name: slide;
+  background-position: 0px 0px;
+  animation: slide 2s infinite linear ;
+}
+/*=========================================================================================*/
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.5);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
