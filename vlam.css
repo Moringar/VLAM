@@ -222,7 +222,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 @media screen and (min-width: 768px) {
 
   .card{
-    padding: 10px;
+    padding: 20px;
     border-top:solid 1px rgba(250,250,250,0.1);
     background-image: url(https://i.imgur.com/WwoeoZm.png);
     background-position: center;
@@ -250,7 +250,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   } 
 
 
-    #charapresent1{
+#charapresent1{
        position: absolute;
        transform: translate(-20%, -10%);
   }
@@ -276,6 +276,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 @media screen and (max-width: 768px) {
 
   .skill{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -287,6 +289,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .state{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -298,6 +302,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .trouble{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -310,6 +316,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   }
 
   .gear{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -321,6 +329,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .rule{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -332,6 +342,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .chara{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -350,6 +362,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 @media screen and (min-width: 768px) {
 
   .skill{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -366,6 +380,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .state{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -382,6 +398,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .trouble{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -399,6 +417,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   }
 
   .gear{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -415,6 +435,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .rule{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -431,6 +453,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .chara{
+    margin-left:3px ;
+    margin-right:3px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -473,13 +497,14 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 /*------------------------------watch and report-----------------*/
 
 .propaganda{
-  padding: 10px;
+  padding: 20px;
   background-image: url(https://i.imgur.com/OTp0D2O.png);
   background-position: center;
   box-shadow:
     0px 5px 5px rgb(0 0 0 / 30%);
   border: solid 1px #3C3C3C;
   border-radius: 7px;
+  transition: ease .5s;
 }
 .lies{
   color: #ebce8b;
@@ -488,7 +513,6 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   font-weight: 300;
   text-shadow: 3px 3px 2px black;
 }
-
 
 .kitchen{
   background-color: #03fc0f;
@@ -594,9 +618,30 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 /*mobile*/
 @media screen and (max-width: 768px) {
 
-
-
 }
+
+/*==================================Propagand'animation===========*/
+
+#token{
+  z-index: 2;
+  position: absolute;
+  transform: scale(1.0) translate(-20%, -33%);
+   transition:all 1s ease;
+}
+
+#tokenshadow{
+  z-index: 1;
+  position: absolute;
+  transform: scale(1.0) translate(-20%, -33%);
+  filter: blur(1px);
+}
+
+#token:hover{
+  transform: scale(1.01) translate(-20%, -40%);
+  filter: brightness(1.1);
+}
+
+
 
 /*==============================================================================Tooltipythingy===========*/
 [data-tooltip] {
@@ -641,3 +686,4 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
