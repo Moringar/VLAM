@@ -25,7 +25,6 @@ h2{
   text-align:left;
 }
 p{
-  text-indent: 5px;
   font-family: 'Lato', sans-serif;
   color: #c2c2c2;
   font-weight: bold;
@@ -51,8 +50,10 @@ th p{
 /*Formate la zone de texte à l'intérieur des cartes.
 =============================================*/
 .cardtxt{
-  border-radius: 2px;
-  border: 1px dotted rgba(28, 28, 28, 1);
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 3px dotted #2D3947;
+  border-radius: 10px;
   font-size: 12pt;
   text-align: left;
   text-indent: 0px;
