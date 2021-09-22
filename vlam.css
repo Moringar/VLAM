@@ -659,8 +659,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 
 /*==============================================================================Tooltipythingy===========*/
 [data-tooltip] {
+
   position: relative;
-  z-index: 2;
   cursor: pointer;
 }
 
@@ -674,6 +674,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 }
 
 [data-tooltip]:before {
+
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -695,6 +696,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
+
   visibility: visible;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
