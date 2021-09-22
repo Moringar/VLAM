@@ -235,9 +235,9 @@
 									<div class="genspace1"></div>
 
 
-									<p>Dernièrement, choisissez son <i class="lighttrouble">défaut</i>.</p>
+									<p>Dernièrement, choisissez son <i class="lighttrouble">trouble</i>.</p>
 									<div class="lightbar"></div>
-									<p class="aside">"Exemple avec un bon <i class="lighttrouble">Défaut</i>."</p>
+									<p class="aside">"Exemple avec un bon <i class="lighttrouble">trouble</i>."</p>
 
 									<div class="lightbar"></div>
 								</div>
@@ -260,7 +260,7 @@
 
 
 				<div class="box board"><!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\Carte 2/ -->
-					<p class="">Un <i class="lightstate">concept</i>, un <i class="lightchara">nom</i> un et un <i class="lighttrouble">défaut</i>, c'est tout ce qu'il faut pour commencer: </p>
+					<p class="">Un <i class="lightstate">concept</i>, un <i class="lightchara">nom</i> un et un <i class="lighttrouble">trouble</i>, c'est tout ce qu'il faut pour commencer: </p>
 					<div class="genspace2"></div>
 					<p class="aside">-Ils contiennent 5 mots ou moins et en disent long sur le personnage.</p>
 					<p class="aside">-Ressemblent à un cliché de cinéma.</p>
@@ -274,19 +274,19 @@
 
 			<div class="column"></div>
 
-			<div style="margin-top: auto;" class="column is-4"><!--colone DROITE-->
+			<div style="margin-top: auto;" class="column is-5"><!--colone DROITE-->
 
 				<div style="margin-bottom:10px" class=" box board">
 					<p>par exemple, pour notre campagne cartoon-comedy, les joueurs ont créé:</p>
 				</div>
 
-				<div class="box card"><!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\Carte TOP/ -->
+				<div style="max-width: 500px;" class="box card"><!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\Carte TOP/ -->
 					<div class="columns is-mobile is-centered">
 
-						<div class="column "><!--ProfilePic-->
-							<img id="profilpic" style="max-height: 100px" src="https://i.imgur.com/yn1jV48.png" alt="">
+						<div style="z-index:1;" class="column "><!--ProfilePic-->
+							<img  id="idpic" style="max-height: 137px" src="https://i.imgur.com/yn1jV48.png" alt="">
 						</div>
-						<div class="column is-9"><!--la description-->
+						<div style="z-index:2;" class="column is-8"><!--la description-->
 
 							<p class="cardtxt"><mark class="chara" data-tooltip="Un surnom qui inclut son métier et son nom.">Nurse Bwillis</mark></p>
 							<div class="barspace"></div>
@@ -298,14 +298,14 @@
 					</div>
 				</div><!--________________fin Carte-->
 
-				<div  class="box card"><!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\Carte MID/ -->
+				<div style="max-width: 500px;"  class="box card"><!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\Carte MID/ -->
 					<div class="columns is-mobile is-centered">
 
-						<div class="column "><!--ProfilePic-->
-							<img id="profilpic" style="max-height: 100px" src="https://i.imgur.com/yn1jV48.png" alt="">
+						<div style="z-index:1;" class="column "><!--ProfilePic-->
+							<img id="idpic" style="max-height: 137px" src="https://i.imgur.com/yn1jV48.png" alt="">
 						</div>
 
-						<div class="column is-9"><!--la description-->
+						<div style="z-index:2;" class="column is-8"><!--la description-->
 							<p class="cardtxt"><mark class="chara" data-tooltip="Son nom et son surnom légendaire." >Nikolaï Nikolaïson <i>ou le</i> BABAKAYAK</mark></p>
 							<div class="barspace"></div>
 							<p class="cardtxt"><mark class="state" data-tooltip="Sa fonction officieuse et son lieu de déploiement.">Agent du KGB infiltré aux U.S</mark></p>
@@ -315,14 +315,14 @@
 					</div>
 				</div><!--________________fin Carte-->
 
-				<div class="box card"><!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\Carte BOT/ -->
+				<div style="max-width: 500px;" class="box card"><!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\Carte BOT/ -->
 					<div class="columns is-mobile is-centered">
 
-						<div class="column "><!--ProfilePic-->
-							<img id="profilpic" style="max-height: 100px" src="https://i.imgur.com/yn1jV48.png" alt="">
+						<div style="z-index:1;" class="column "><!--ProfilePic-->
+							<img id="idpic" style="max-height: 137px" src="https://i.imgur.com/yn1jV48.png" alt="">
 						</div>
 
-						<div class="column is-9"><!--la description-->
+						<div style="z-index:2;" class="column is-8"><!--la description-->
 							<p class="cardtxt"><mark class="chara" data-tooltip="Son nom, sa fonction et sa couleur.">Grundalf le mage bleu</mark></p>
 							<div class="barspace"></div>
 							<p class="cardtxt"><mark class="state" data-tooltip="Populaire, serviable et encore en apprentissage.">Le magicien de quartier amateur.</mark></p>
@@ -534,7 +534,17 @@
 
 		<div class="columns"><!--ROW explication des valeurs d'états-->
 
-			<div class="column is-8">
+
+
+
+
+
+
+
+
+
+			<div class="column is-8"><!--Colonne de gauche, états et troubles-->
+
 				<div class="box board">
 					<h2>Dans quel <mark class="state" data-tooltip="synonyme de 'situation' ou 'condition'." >état</mark> êtes-vous aujourd'hui?</h2>
 					<div class="barspace"></div>
@@ -546,42 +556,58 @@
 						<i class="lightrule">Fun fact</i>: Le concept et le défaut sont dèja deux <i class="lightstate">états</i> de départ, utilisable lors des <i class="lightrule">tests</i>, avec lesquels les joueurs commencent la partie. C'est au cours de leurs aventures qu'il en découvriront et en créeront de nouveaux, certains pour l'espace d'un instant et d'autres, marqueront les personnages durablement. <br> Pour déterminer le modificateur d'un état, posez-vous la question:
 					</p>
 					<div class="genspace2"></div>
-					<p class="cardtxt">
+					<p style="text-align: center;" class="cardtxt">
 						Dans le <i class="lightrule"> contexte</i> actuel, quel effet pourrait avoir mon <i class="lightstate">état</i> sur la <i class="lightskill">compétence</i> que je souhaite utiliser ?
 					</p>
 					<div class="genspace2"></div>
 					<p>
-						Il suffit ensuite de consulter <strong style="color:#85B3CD;">tableau des modificateurs objectifs</strong> des états et de trouver sa valeur. Pour mieux saisir l'attribution des <i class="lightrule">modificateur</i> d'état, trouvez quelques exemple contextualisés, ci-dessous.
+						Il suffit ensuite de consulter <strong style="color:#85B3CD;">tableau des modificateurs objectifs</strong> des états et de trouver sa valeur.
 					</p>
 				</div>
 
+				<div class="box board">
+
+					<h2>
+						Des evenements <mark class="trouble" data-tooltip="synonyme de 'situation' ou 'condition'." >troublants</mark> et des conséquences perturbantes.
+					</h2>
+
+					<div class="barspace"></div>
+
+					<p>
+						Le <i class="lighttrouble">trouble</i> est un <i class="lightstate">état</i> qui représente, comme son nom l'indique,  <i class="lighttrouble">une perturbation du personnage</i>. Ils sont généralement récupérés pas les personnages pour représenter une situation <i class="lighttrouble">problématique</i>, les <i class="lighttrouble">conséquences d'un accident</i> ou d'un grand <i class="lighttrouble">stress</i>. Ils peuvent également être un <i class="lightstate">état</i> dernièrement <i class="lightstate">neutre ou positif</i> qui s'est révélé être une source de problème à la lumière des événements récents.
+					</p>
 
 
-
-
-
-
-
-				<!--Les exemples-->
-
-
-
+				</div>
 
 
 
 				<div class="propaganda"> <!--Le teasing de la mécanique de collaboration-->
 					<div class="columns">
 						<div class="column wide">
-							<img id="profilpic" style="max-height: 40px" src="https://i.imgur.com/yn1jV48.png" alt="">
+							<img id="profilpic" style=" position: absolute; max-width:40px" src="https://i.imgur.com/yn1jV48.png" alt="">
 						</div>
 						<div class="column is-10">
-							<p class="lies">Il est vivement <i>encouragé</i> de collaborer, de surveiller et d'invoquer les états <i>négatifs</i> des autres membres de la partie. <i>Conditions de collaboration et modalités de réclamations de récompenses disponibles en section "mecaniques"</i>.</p>
+							<p class="lies">Il est vivement <i>encouragé</i> de collaborer, de surveiller et de signaler toute <i class="lightrule">perturbation</i> dans le cours de l'aventure. <i>Conditions de collaboration et modalités de réclamations de récompenses disponibles en section "TOKEN"</i>.</p>
 						</div>
 					</div>
 				</div>
+
 			</div>
 
-			<div class="column ">
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="column "><!--Tableau Objectif-->
 
 				<div style="margin-bottom:0px; border-radius:15px 15px 0px 0px; border-bottom: 2px #2A2A2A dotted;" class="box board">
 					<h1>Le tableau des modificateurs objectifs</h1>
@@ -602,45 +628,45 @@
 						<tbody>
 
 							<tr id="N7">
-								<th><p style="color:#B85AD7;text-align: right;">UNIQUE & PARFAIT</p></th>
-								<th><p style="color:#B85AD7;">+3</p></th>
+								<th><p class="lies" style="text-align: right;">UNIQUE & PARFAIT</p></th>
+								<th><p >+3</p></th>
 							</tr>
 
 							<tr id="N6">
-								<th><p style="color:#D7CA5A;text-align: right;">Favorable</p></th>
-								<th><p style="color:#D7CA5A;">+2</p></th>
+								<th><p class="lies" style="text-align: right;">Favorable</p></th>
+								<th><p class="lies">+2</p></th>
 							</tr>
 
 							<tr id="N5">
-								<th><p style="color:#5AD772;text-align: right;">Utile</p></th>
-								<th><p style="color:#5AD772;">+1</p></th>
+								<th><p class="lies" style="text-align: right;">Utile</p></th>
+								<th><p class="lies">+1</p></th>
 							</tr>
 
 							<tr id="N4">
-								<th><p style="color:#FFFFFF;text-align: right;">Figuratif</p></th>
-								<th><p style="color:#FFFFFF;">0</p></th>
+								<th><p class="lies" style="text-align: right;">Figuratif</p></th>
+								<th><p class="lies">0</p></th>
 							</tr>
 
 							<tr id="N3">
-								<th><p style="color:#D7B25A;text-align: right;">Inadapté</p></th>
-								<th><p style="color:#D7B25A;">-1</p></th>
+								<th><p class="lies" style="text-align: right;">Inadapté</p></th>
+								<th><p class="lies">-1</p></th>
 							</tr>
 
 							<tr id="N2">
-								<th><p style="color:#D7865A;text-align: right;">Gênant</p></th>
-								<th><p style="color:#D7865A;">-2</p></th>
+								<th><p class="lies" style="text-align: right;">Gênant</p></th>
+								<th><p class="lies">-2</p></th>
 							</tr>
 
 							<tr id="N1">
-								<th><p style="color:#D75A5A; text-align: right;">Incapacitant</p></th>
-								<th><p style="color:#D75A5A;">-3</p></th>
+								<th><p class="lies" style="text-align: right;">Incapacitant</p></th>
+								<th><p class="lies">-3</p></th>
 							</tr>
 
 						
 
 
 
-						<tr id="N8">
+						<tr >
 							<th><p></p></th>
 							<th><p></p></th>
 						</tr>
@@ -648,7 +674,109 @@
 				</table>
 			</div>
 
+
+
+
 		</div>
+
+
+
+
+
+		<div class="genspace1"></div>
+		<div class="barspace"></div>
+
+
+		<div class="columns"><!-- Row des exemples-->
+
+
+			<div class="column "><!-- carte Gauche____________________________________________________________________________________________-->
+				<div class="card">   
+					<div class="columns is-mobile">
+						<div class="column is-8">
+							<h2>L'exemple n° R1</h2>
+						</div>
+						<div class="colum"><!-- ICONE -->
+							<img  style="position:absolute; transform: translate(43%, 0%); max-width: 50px;" src="https://i.imgur.com/yn1jV48.png">
+						</div>
+					</div>
+					<div class="boxboard">
+
+						<div id="N7" class="cardtxt"><!-- Figure 1-->
+							<p class=" lies"> Valeur </p>
+						</div>
+						<div id="N7" class="cardtxt"><!-- Figure 2-->
+							<p class=" lies"> Valeur </p>
+						</div>
+						<div id="N7" class="cardtxt"><!-- Figure 3-->
+							<p class=" lies"> Valeur </p>
+						</div>
+
+					</div>
+				</div>
+			</div><!--fin carte-->
+
+
+			<div class="column "><!-- carte centre____________________________________________________________________________________________-->
+				<div class="card">   
+					<div class="columns is-mobile">
+						<div class="column is-8">
+							<h2>L'exemple n° R1</h2>
+						</div>
+						<div class="colum"><!-- ICONE -->
+							<img  style="position:absolute; transform: translate(43%, 0%); max-width: 50px;" src="https://i.imgur.com/yn1jV48.png">
+						</div>
+					</div>
+					<div class="boxboard">
+
+						<div id="N7" class="cardtxt"><!-- Figure 1-->
+							<p class=" lies"> Valeur </p>
+						</div>
+						<div id="N7" class="cardtxt"><!-- Figure 2-->
+							<p class=" lies"> Valeur </p>
+						</div>
+						<div id="N7" class="cardtxt"><!-- Figure 3-->
+							<p class=" lies"> Valeur </p>
+						</div>
+
+					</div>
+				</div>
+			</div><!--fin carte-->
+
+			<div class="column "><!-- carte Droite____________________________________________________________________________________________-->
+				<div class="card">   
+					<div class="columns is-mobile">
+						<div class="column is-8">
+							<h2>L'exemple n° R1</h2>
+						</div>
+						<div class="colum"><!-- ICONE -->
+							<img  style="position:absolute; transform: translate(43%, 0%); max-width: 50px;" src="https://i.imgur.com/yn1jV48.png">
+						</div>
+					</div>
+					<div class="boxboard">
+
+						<div id="N7" class="cardtxt"><!-- Figure 1-->
+							<p class=" lies"> Valeur </p>
+						</div>
+						<div id="N7" class="cardtxt"><!-- Figure 2-->
+							<p class=" lies"> Valeur </p>
+						</div>
+						<div id="N7" class="cardtxt"><!-- Figure 3-->
+							<p class=" lies"> Valeur </p>
+						</div>
+
+					</div>
+				</div>
+			</div><!--fin carte-->
+
+
+		</div>
+
+
+
+
+
+
 
 
 
@@ -674,7 +802,7 @@
 
 			<div class="column is-8">
 				<div class="box board">
-					<h2>C'est un <mark class="state" data-tooltip="Favorable lors des attaques à distance silencieuses" >Beretta Px4 Storm équipé d'un silencieux</mark> dans votre poche ?</h2>
+					<h2>C'est un <mark class="gear" data-tooltip="Favorable lors des attaques à distance silencieuses" >Beretta Px4 Storm équipé d'un silencieux</mark> dans votre poche ?</h2>
 					<p class="aside">Ou êtes vous tout simplement content de me voir ?</p>
 					<div class="barspace"></div>
 					<p>
@@ -702,10 +830,10 @@
 				<div class="propaganda"> <!--Le teasing de la mécanique de collaboration-->
 					<div class="columns">
 						<div class="column wide">
-							<img id="profilpic" style="max-height: 40px" src="https://i.imgur.com/yn1jV48.png" alt="">
+							<img id="profilpic" style="position: absolute; max-height: 40px" src="https://i.imgur.com/yn1jV48.png" alt="">
 						</div>
 						<div class="column is-10">
-							<p class="lies">Il est fermement <i>avisé</i> de collaborer, de surveiller et d'invoquer tout équipement <i>négatif</i> des autres membres de la partie. <i>Conditions de collaboration et modalités de réclamations de récompenses disponibles en section "mecaniques"</i>.</p>
+							<p class="lies">Il est fermement <i>avisé</i> de collaborer, de surveiller et de signaler tout équipement <i class="lightrule">suspect</i>. <i>Conditions de collaboration et modalités de réclamations de récompenses disponibles en section "TOKEN"</i>.</p>
 						</div>
 					</div>
 				</div>
@@ -733,38 +861,38 @@
 						<tbody>
 
 							<tr id="N7">
-								<th><p style="color:#B85AD7;text-align: right;">UNIQUE & PARFAITE</p></th>
-								<th><p style="color:#B85AD7;">+3</p></th>
+								<th><p class="lies" style="text-align: right;">UNIQUE & PARFAITE</p></th>
+								<th><p class="lies">+3</p></th>
 							</tr>
 
 							<tr id="N6">
-								<th><p style="color:#D7CA5A;text-align: right;">Favorable</p></th>
-								<th><p style="color:#D7CA5A;">+2</p></th>
+								<th><p class="lies" style="text-align: right;">Favorable</p></th>
+								<th><p class="lies">+2</p></th>
 							</tr>
 
 							<tr id="N5">
-								<th><p style="color:#5AD772;text-align: right;">Cohérente</p></th>
-								<th><p style="color:#5AD772;">+1</p></th>
+								<th><p class="lies" style="text-align: right;">Cohérente</p></th>
+								<th><p class="lies">+1</p></th>
 							</tr>
 
 							<tr id="N4">
-								<th><p style="color:#FFFFFF;text-align: right;">Figurative</p></th>
-								<th><p style="color:#FFFFFF;">0</p></th>
+								<th><p class="lies" style="text-align: right;">Figurative</p></th>
+								<th><p class="lies">0</p></th>
 							</tr>
 
 							<tr id="N3">
-								<th><p style="color:#D7B25A;text-align: right;">Incohérente</p></th>
-								<th><p style="color:#D7B25A;">-1</p></th>
+								<th><p class="lies" style="text-align: right;">Incohérente</p></th>
+								<th><p class="lies">-1</p></th>
 							</tr>
 
 							<tr id="N2">
-								<th><p style="color:#D7865A;text-align: right;">Gênante</p></th>
-								<th><p style="color:#D7865A;">-2</p></th>
+								<th><p class="lies" style="text-align: right;">Gênante</p></th>
+								<th><p class="lies">-2</p></th>
 							</tr>
 
 							<tr id="N1">
-								<th><p style="color:#D75A5A; text-align: right;">Incapacitante</p></th>
-								<th><p style="color:#D75A5A;">-3</p></th>
+								<th><p class="lies" style=" text-align: right;">Incapacitante</p></th>
+								<th><p class="lies">-3</p></th>
 							</tr>
 
 						
@@ -855,14 +983,15 @@
 						</div>
 						<div class="column is-10">
 							<h1>Les Tokens</h1>
+							<p style="text-align: center;">et le guide du parfait collaborateur.</p>
 							<div class="barspace"></div>
 						</div>
 					</div>
 
-					<div style="z-index:0" class="box card">
-						<h2 class="">Chaque joueur commence la partie avec <mark data-tooltip="Cependant, n'importe quelle jeton fera l'affaire." class="rule">2 TOKEN VLAM</mark> en sa possession.</h2>
+					<div style="z-index:0" class="box board">
+						<h2 class="">Chaque joueur commence la partie avec <mark data-tooltip="JETON." class="rule">2 TOKENS</mark> en sa possession.</h2>
 						<div class="lightbar"></div>
-						<p>Le nombre de token en circulation est définit par le <mark class="rule" data-tooltip="Maître du Jeu, Maître du Donjon, Maître des secrets, Game Master">M . J</mark>. Pour les dépenser ou en gagner, vous avez plusieurs possibilités: </p>
+						<p>Le nombre de token en circulation est définit par le <mark class="rule" data-tooltip="Maître du Jeu, Maître du Donjon, Maître des secrets, Game Master">M.J</mark>. Pour les dépenser ou en gagner, vous avez plusieurs possibilités: </p>
 					</div>
 					
 					<div style="z-index:0" class="box card">	
@@ -874,13 +1003,22 @@
 					<div style="z-index:0" class="box card">	
 						<h2 style=" text-align: center;color:#ebce8b;" >Collaborer avec le Destin</h2>
 						<div class="lightbar"></div>
+
 						<p class="">
-							Les <i class="lightchara">personnages</i> et leurs aventures seront parsemés d'<i class="lightstate">états</i> en tout genres, certains benéfiques et d'autres plus sombres voire dangereux. Puisqu'il n'est pas commun, pour un <i class="lightchara">héros</i> normalement constitué, d'emprunter volontairement le <mark class="state" data-tooltip="C'est un bon exemple d'état d'un environnement.">chemin le plus accidenté</mark>, d'agir <mark class="state" data-tooltip="Un personnage pourrait avoir le défaut téméraire ou impatient.">au mépris du danger</mark> ni d'embrasser ses <mark class="state" data-tooltip="Un héros gourmand, radin, peureux (...)">travers les plus honteux</mark>, il vous est proposé de collaborer. <br>
-							
+							Au cours de la partie, le <i class="lightrule">M.J</i> ou un joueur, au prix d'un token,  peut invoquer un <i class="lightstate">état</i> ou un <i class="lightrule">objet</i> problématique afin de proposer à un autre joueur une complication conséquente.<br>
+							 <i class="lies">Si le joueur concerné accepte, il remporte un token et doit surmonter la complication. <br>S'il refuse, il dépense un token, explique comment il échappe à son destin et en assume les conséquences.</i>
 						</p>
-						<p>
-							Pour ce faire, il vous suffit 
+
+						<div class="lightbar"></div>
+						<p class="cardtxt">Quelques exemples: <br>
+						
 						</p>
+						<div class="lightbar"></div>
+
+						<p class="aside">
+							Les <i class="lightchara">personnages</i> et leurs aventures seront parsemés d'<i class="lightstate">états</i> en tout genres, certains benéfiques et d'autres plus sombres voire dangereux. Puisqu'il n'est pas commun, pour un <i class="lightchara">héros</i> normalement constitué, d'emprunter volontairement le <mark class="state" data-tooltip="Un joueur concerné peut souligner l'influence de votre environnement sur votre situation.">chemin le plus accidenté</mark>, d'agir <mark class="gear" data-tooltip="Quelqu'un pourrait vous rappeler qu'un objet compromet votre sécurité.">au mépris du danger</mark> ni d'embrasser ses <mark class="state" data-tooltip="L'on pourrait dire que votre attitude actuelle ne reflete pas sufisamment votre défaut.">travers les plus honteux</mark>:<i class="lightrule"> Collaborez, le destin vous rendra la pareille.</i>. <br>
+						</p>
+
 					</div>
 
 					<div style="z-index:0" class="box card">	
