@@ -31,6 +31,7 @@ p{
   font-size: 15px;
   line-height: 1.8;
   text-align: justify;
+  text-shadow: 0px 1px 2px #000000;
 }
 
 th p{
@@ -54,7 +55,7 @@ th p{
   margin-bottom: 2px;
   padding-left: 2px;
   padding-right: 2px;
-  border: 3px dotted #2D3947;
+  border: 2px dotted #2D3947;
   border-radius: 7px;
   font-size: 12pt;
   text-align: left;
@@ -164,6 +165,11 @@ position: absolute;
 transform: translate(0% 0%);
 }
 
+#illustration{
+ position:absolute; 
+ transform: translate(43%, 0%); 
+ max-width: 50px;
+}
 
 .center{
   display: block;
@@ -209,7 +215,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       padding: 10px;
       border-top:solid 1px rgba(250,250,250,0.1);
       background-image: url(https://i.imgur.com/oned5R3.png);
-      border-radius: 7px;
+      border-radius: 40px;
   }
 
   .board{
@@ -236,7 +242,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     background-position: center;
     box-shadow:
     0px 5px 5px rgb(0 0 0 / 30%);
-    border-radius: 7px;
+    border-radius: 40px;
   }
 
   /*Carte semi opaque. Informations génerales.
@@ -486,7 +492,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   color: #FFBA00;
 }
 .lightstate{
-  color:  rgba(0,132,229,0.9);s
+  color:  rgba(0,132,229,0.9);
+    line-height: 1.2;
 }
 .lighttrouble{
   color: #C90000;
@@ -565,7 +572,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       background-position: 0 0;
     }
     to {
-      background-position: 74px 0; /*Slide vers la droite */
+      background-position: 0px -74px; /*Slide vers la droite */
     }
   }
   @keyframes sliderev {
@@ -573,7 +580,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       background-position: 0 0;
     }
     to {
-      background-position: -74px 0; /*Slide vers la droite */
+      background-position: 0px 74px; /*Slide vers la droite */
     }
   }
 
@@ -581,7 +588,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     background-color: transparent;
     background-image: url(https://i.imgur.com/0KOXz6b.png);
     background-position: 0px 0px;
-    animation: sliderev 2s linear infinite;
+    animation: sliderev 1s linear infinite;
   }
 
   #N2{  /* modificateur Valeur -2*/
@@ -601,22 +608,22 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     animation: slide 30s linear infinite;
   }
   #N5 {  /* modificateur Valeur 1*/
-    background-image: url(https://i.imgur.com/wR5lOWJ.png);
+    background-image: url(https://i.imgur.com/U86fLVs.png);
     animation-name: slide;
     background-position: 0px 0px;
     animation: slide 10s linear infinite;
   }
   #N6 {  /* modificateur Valeur 2*/
-    background-image: url(https://i.imgur.com/1sOCwU3.png);
+    background-image: url(https://i.imgur.com/omOqGVa.png);
     animation-name: slide;
     background-position: 0px 0px;
     animation: slide 4s linear infinite;
   }
   #N7 {  /* modificateur Valeur 3*/
-    background-image: url(https://i.imgur.com/J0XR1kB.png);
+    background-image: url(https://i.imgur.com/MKHsVlP.png);
     animation-name: slide;
     background-position: 0px 0px;
-    animation: slide 2s infinite linear ;
+    animation: slide 1s infinite linear ;
   }
 
 
