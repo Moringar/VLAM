@@ -50,6 +50,8 @@ th p{
 /*Formate la zone de texte à l'intérieur des cartes.
 =============================================*/
 .cardtxt{
+  margin-top: 2px;
+  margin-bottom: 2px;
   padding-left: 2px;
   padding-right: 2px;
   border: 3px dotted #2D3947;
@@ -282,8 +284,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 @media screen and (max-width: 768px) {
 
   .skill{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -295,8 +297,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .state{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -308,8 +310,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .trouble{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -322,8 +324,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   }
 
   .gear{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -335,8 +337,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .rule{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -348,8 +350,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
       1px 0 black, 0 -1px black;
   }
   .chara{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -368,8 +370,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 @media screen and (min-width: 768px) {
 
   .skill{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -386,8 +388,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .state{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -404,8 +406,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .trouble{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -423,8 +425,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   }
 
   .gear{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -441,8 +443,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .rule{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -459,8 +461,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
     color: white;
   }
   .chara{
-    margin-left:3px ;
-    margin-right:3px ;
+    margin-left:2px ;
+    margin-right:2px ;
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Lato', sans-serif;
@@ -515,7 +517,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 .lies{
   color: #ebce8b;
   font-size: 16px;
-  text-shadow: 2px 2px 1px black;
+  text-shadow: 2px 2px 3px black;
 }
 
 .kitchen{
@@ -577,41 +579,41 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 
   #N1 { /* modificateur Valeur -3*/
     background-color: transparent;
-    background-image: url(https://i.imgur.com/KqGQvnR.png);
+    background-image: url(https://i.imgur.com/0KOXz6b.png);
     background-position: 0px 0px;
     animation: sliderev 2s linear infinite;
   }
 
   #N2{  /* modificateur Valeur -2*/
-    background-image: url(https://i.imgur.com/7WwmbQF.png);
+    background-image: url(https://i.imgur.com/N8jV67D.png);
     background-position: 0px 0px;
     animation: sliderev 4s linear infinite;
   }
   #N3 {  /* modificateur Valeur -1*/
-    background-image: url(https://i.imgur.com/NbMGaWh.png);
+    background-image: url(https://i.imgur.com/gwuHU42.png);
     background-position: 0px 0px;
     animation: sliderev 10s linear infinite;
   }
   #N4 {  /* modificateur Valeur 0*/
-    background-image: url(https://i.imgur.com/Y787U6p.png);
+    background-image: url(https://i.imgur.com/5eSowaF.png);
     animation-name: slide;
     background-position: 0px 0px;
     animation: slide 30s linear infinite;
   }
   #N5 {  /* modificateur Valeur 1*/
-    background-image: url(https://i.imgur.com/GgtBhUI.png);
+    background-image: url(https://i.imgur.com/wR5lOWJ.png);
     animation-name: slide;
     background-position: 0px 0px;
     animation: slide 10s linear infinite;
   }
   #N6 {  /* modificateur Valeur 2*/
-    background-image: url(https://i.imgur.com/whp4K4f.png);
+    background-image: url(https://i.imgur.com/1sOCwU3.png);
     animation-name: slide;
     background-position: 0px 0px;
     animation: slide 4s linear infinite;
   }
   #N7 {  /* modificateur Valeur 3*/
-    background-image: url(https://i.imgur.com/o5ppCBo.png);
+    background-image: url(https://i.imgur.com/J0XR1kB.png);
     animation-name: slide;
     background-position: 0px 0px;
     animation: slide 2s infinite linear ;
