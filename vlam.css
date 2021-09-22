@@ -147,6 +147,15 @@ html{
   height: 3000px;
 }
 
+/* Format Mobile */
+@media screen and (max-width: 768px) {
+  .barspace{
+  height: 1px;
+  background-color: grey;
+   margin-top: 3px;
+   margin-bottom: 20px;
+ }
+}
 /*_____________________________________________________________Formats d'images
 ==============================================================================*/
 #tophead{
