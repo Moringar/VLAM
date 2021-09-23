@@ -114,6 +114,7 @@ html{
   background-color: rgba(250, 250, 250, 0);
 }
 .boxblur{
+  z-index: 4;
   background-color: rgba(250, 250, 250, 0);
   backdrop-filter: blur(2px);
 }
@@ -180,9 +181,10 @@ transform: translate(0% 0%);
 
 #illustration{
    position:relative;
+   left: 16px ;
    top: 26px ;
-   max-width: 145px;
-   margin: -53px;
+   max-width: 122px;
+   margin: -57px;
 }
 
 .center{
@@ -538,6 +540,8 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   transition: ease .5s;
 }
 .lies{
+  z-index: 7;
+  position: relative;
   color: #ebce8b;
   font-size: 16px;
   text-shadow: 2px 2px 3px black;
