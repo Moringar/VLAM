@@ -26,7 +26,7 @@ h2{
 }
 p{
   font-family: 'Lato', sans-serif;
-  color: #7D7D7D;
+  color: #909090;
   font-weight: bold;
   font-size: 15px;
   line-height: 1.8;
@@ -71,7 +71,7 @@ th p{
   font-weight: normal;
   text-align: justify;
   line-height: 1.7;
-  color: grey;
+  color: #747474;
 }
 
 /*wooop woop! adapt'la taille de la police!
@@ -164,19 +164,24 @@ html{
 /*_____________________________________________________________Formats d'images
 ==============================================================================*/
 #tophead{
-  margin-top: 35vh;
+    margin-top: 25vh;
+    max-width: 30vw;
 }
 
 #profilpic{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height:75px;
+  margin: -48px;
+  position: relative;
+  top: 15px;
+  left: 25px;
+  max-width: 131px;
 }
 
 #idpic{
-position: absolute;
-transform: translate(0% 0%);
+  margin: -20px;
+  left: 15px;
+min-width: 140px;
+position: relative;
+
 }
 
 #illustration{
@@ -527,6 +532,25 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   color: #ADF500;
 }
 
+.pauvre{
+  color:#54828F ;
+}
+.commun{
+  color:#29A3B2 ;
+}
+
+.bon{
+  color: #1FCF5D;
+}
+.expert{
+  color:#EAED08 ;
+}
+
+.maitre{
+  color: #C600FF;
+}
+
+
 /*------------------------------watch and report-----------------*/
 
 .propaganda{
@@ -565,7 +589,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
   background-image: url(https://i.imgur.com/A1Ql8Nl.png);
 }
 .rulehead{
-  background-image: url(https://i.imgur.com/Ruod9C0.png);
+  background-image: url(https://i.imgur.com/GWs4UWY.png);
 }
 /*_____________________________________Animations, Transitions & hover behavior
 ==============================================================================*/
@@ -679,13 +703,14 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 
 /*==============================================================================Tooltipythingy===========*/
 [data-tooltip] {
-
+z-index: 30;
   position: relative;
   cursor: pointer;
 }
 
 [data-tooltip]:before,
 [data-tooltip]:after {
+z-index: 30;
   visibility: hidden;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -694,7 +719,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 }
 
 [data-tooltip]:before {
-
+z-index: 30;
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -716,7 +741,7 @@ a#pillbox h2,a#pillbox_l h2,a#pillbox_r h2{
 
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
-
+z-index: 30;
   visibility: visible;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
