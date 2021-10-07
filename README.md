@@ -4,3 +4,5 @@ VLAM est un système de JDR générique dont la narration est la source principa
 Des mises à jours concernant l'équilibrage des règles et l'ergonomie sont prévues.
 
 Ce projet m'a permis de mettre en oeuvre mes compétences en HTML/CSS et en design.
+
+<hr>
